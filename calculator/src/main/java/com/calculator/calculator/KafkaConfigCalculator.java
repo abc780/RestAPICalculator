@@ -52,7 +52,7 @@ public class KafkaConfigCalculator {
 
         Map<String, Object> props = new HashMap<>();
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
-        props.put(ConsumerConfig.GROUP_ID_CONFIG, "calculator-group");
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, "calculator-rest-group");
         props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
 
         return new DefaultKafkaConsumerFactory<>(props, new StringDeserializer(), deserializer);

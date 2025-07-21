@@ -23,7 +23,7 @@ public class CalculatorKafkaConsumer {
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    @KafkaListener(topics = "calc-requests", groupId = "calculator-rest-group")
+    @KafkaListener(topics = "calculator.requests", groupId = "calculator-rest-group")
     public void listenCalcRequests(ConsumerRecord<String, OperationRequest> record) {
 
         logger.info("Received message from calc-requests topic, key: {}", record.key());
