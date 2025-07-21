@@ -1,6 +1,7 @@
 # RestAPICalculator
 
 #Considerations
+
 	The current implementation is experiencing connectivity issues with Kafka, likely due to configuration problems that need to be resolved. Although this was my first experience working with Kafka technology, the challenge has been both insightful and engaging, providing valuable learning opportunities.
 
 # Calculator REST API
